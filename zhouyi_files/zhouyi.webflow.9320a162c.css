@@ -587,6 +587,15 @@ color: white;
   box-shadow: none;
 }
 
+.container{
+  overflow:hidden;
+    display:block;
+}
+#video_deepEmulator{
+  margin-left: -50px;
+}
+
+
 .divblock {
   margin-top: 1px;
   margin-bottom: 67px;
