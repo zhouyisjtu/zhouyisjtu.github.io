@@ -58,7 +58,7 @@
             <h4 class="heading-3">INTRODUCTION</h4>
             <p class="paragraph">We introduce a 3D strand-based hair dataset containing 21,054 hairstyles. The dataset was collected for training <a href="https://cs.yale.edu/homes/che/projects/perm/">[PERM]</a>, a parametric 3D hair generator, which is applied in <a href="https://www.youtube.com/watch?v=FWV5eRsjbCs">[Digital Salon]</a>, a real-time interactive hair simulator. The data were created by augmenting the 343 hair models from <a href="https://huliwenkidkid.github.io/liwenhu.github.io/">[USC-HairSalon]</a>, using the hair blending methods introduced in <a href="https://cs.yale.edu/homes/che/projects/perm/">[PERM]</a>, <a href="https://arxiv.org/pdf/1806.07467.pdf">[HairNet]</a> and <a href="https://www.hao-li.com/Hao_Li/Hao_Li_-_publications_%5BSingle-View_Hair_Modeling_Using_A_Hairstyle_Database%5D.html">[Hu et al.]</a>.</p>
             
-            <p class="paragraph">TO DO: add some example images.</p>
+            <img src="./hair20k_teaser.jpg" width="100%" height="100%">
             <p class="paragraph">In the database,</p>
             <p class="paragraph">
                 - Hair styles are organized in 10 catergories;<br>
@@ -67,14 +67,14 @@
                 - Each hair model constains ~10,000 hair strands. We do not store strands with zero lengths.<br>
                 - Each strand is sampled as polyline with uniform segment length.<br>
                 - For getting hair models with uniformly sampled roots on the scalp and uniform segment numbers on the strand, please refer to the <a href="https://github.com/c-he/perm">code</a> of PERM.<br>
-                - For doubling the dataset by mirroring the hair styles, please use the <a href="https://github.com/c-he/perm/blob/main/scripts/process-usc-hair.sh">script</a> in PERM.<br>
+                - The database links below contains 10,527 hair models. For mirroring the hair styles to get the complete database, please use the <a href="https://github.com/c-he/perm/blob/main/scripts/process-usc-hair.sh">script</a> in PERM.<br>
             </p>
 
             <hr class="myhr" ></hr>
 
-            <h4 class="heading-3">BRIEF EXPLANATION OF THE MAIN PROCESS</h4>
+            <h4 class="heading-3">MAIN PROCESS</h4>
             <p class="paragraph">We classify the 343 hair models in USC-HairSalon into 10 catergories. Visualizations of the 10 catergories can be found in <a href="https://github.com/papagina/HairNet_DataSetGeneration/tree/master/HairClasses">HairNet_DataSetGeneration/HairClasses</a>. Within each class, we blend each pair of two different hair styles. For blending the hairstyles, we first compute five guidestrands for each hairstyle, with each guidestrand representing a partial area of the hair. Then we randomly pick five guidestrands from the ten guidestrands and form a new hair by blending the five local regions. Blending is done in the volumetric space. After blending, we clean the strands and place the hair on the AVATAR NEO head based on the warping between two heads. </p>
-            <p class="paragraph">TO DO: add an example image.</p>
+            <img src="./HAIR20K_blend.jpg" width="100%" height="100%">
 
 
             <hr class="myhr" ></hr>
@@ -127,7 +127,7 @@
             <div class="bibtex-entry">
                 <span class="type">@article{Hair20k</span>},
                 <div class="field"><span class="label">title</span>={<span class="value">Hair20K: A Large 3D Hairstyle Database for Hair Modeling</span>}</div>
-                <div class="field"><span class="label">author</span>={<span class="value">Yi Zhou</span>}</div>
+                <div class="field"><span class="label">author</span>={<span class="value">Yi Zhou, Xin Sun, Chengan He</span>}</div>
                 <div class="field"><span class="label">url</span>={<span class="value">https://zhouyisjtu.github.io/project_hair/hair20k.html</span>}</div>
                 <div class="field last-field"><span class="label">year</span>={<span class="value">2024</span>}</div>
             </div>
