@@ -48,6 +48,44 @@
 	
 }
 
+.news-block {
+            margin: 0px;
+            padding: 0px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-height: 300px; /* Limit the height of the news block */
+            overflow-y: auto; /* Add vertical scrolling */
+}
+.news-block h2 {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+.news-item {
+	margin-bottom: 15px;
+}
+.news-item h3 {
+	margin: 0;
+	font-size: 20px;
+}
+.news-item p {
+	margin: 5px 0 0;
+	font-size: 16px;
+}
+.news-date {
+	font-size: 14px;
+	color: #555;
+}
+
+/* Optional: Customize scrollbar (for WebKit browsers like Chrome and Safari) */
+.news-block::-webkit-scrollbar {
+	width: 8px;
+}
+.news-block::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
 
 </style>
 </head>
@@ -55,7 +93,9 @@
 <div data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" class="w-nav navigation">
 	<div class="w-container">
 		<nav role="navigation" class="w-nav-menu nav-menu">
-			<a href="./index.html#top" class="w-nav-link nav-link w--current" style="max-width: 940px;">About</a>
+
+			
+			<a href="./index.html#top" class="w-nav-link nav-link w--current"  style="max-width: 940px; text-align: left;">About</a>
 			<a href="./index.html#research" class="w-nav-link nav-link" style="max-width: 940px;">Research</a>
 			<a href="./index.html#music" class="w-nav-link nav-link" style="max-width: 940px;">Music</a>
 		</nav>
@@ -77,13 +117,14 @@
 					</div>
 					
 					
-					<div><p style="color:white"><br><br><br><br>I am a research scientist at Adobe. I received my PhD from the University of Southern California under the supervision of <a href="https://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html">Dr. Hao Li</a> and my Master's and Bachelor's degrees from Shanghai Jiao Tong University under the supervision of Dr. Shuangjiu Xiao. My research focuses on 3D learning and 3D vision, especially on creating digital humans and autonomous virtual avatars. My works mainly lie in 3D human modeling, reconstruction, motion synthesis and simulation.</p>
-						
+					<div><p style="color:white"><br><br><br><br>I am a research scientist at Adobe. I received my PhD from the University of Southern California under the supervision of <a href="https://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html">Dr. Hao Li</a> and my Master's and Bachelor's degrees from Shanghai Jiao Tong University under the supervision of Dr. Shuangjiu Xiao. My research focuses on 3D representation learning and virtual human, specialized 3D human modeling, reconstruction, motion synthesis and simulation. I served in the Siggraph 2023 Technical Papers Committee and Siggraph Asia 2024 Technical Papers Committee.</p>
 					</div>
 
 			</div>
 			
 		</div>
+
+		
 	</div>
 </div>
 
@@ -91,19 +132,51 @@
 
 	<div class="project-contatiner w-container"><h1 class="main-heading">News</h1>
 
-	<p style="color:black"> - Debuting my first original song “痛苦都来自幻想”.</p>
+		<div class="news-block">
 
-	<p style="color:black"> - Digital Salon was presented at Siggraph Asia Real-Time Live 2024.</p>
+			<div class="news-item">
+				<p class="news-date">February 13, 2024</p>
+				<p>I serve as the 46th Annual Conference of the European Association for Computer Graphics short paper IPC member.</p>
+			</div>
 	
-	<p style="color:black"> - I will serve in the Siggraph Asia 2024 Technical Papers Committee.</p>
-
-	<p style="color:black"> - I am co-organizing the CVPR 2024 workshop <a href="https://syntagen.github.io/.">SyntaGen - Harnessing Generative Models for Synthetic Visual Datasets</a>. </p>
+			<div class="news-item">
+				<p class="news-date">January 10, 2025</p>
+				<p>Debuting my first original song <a href="./index.html#music" >“痛苦都来自幻想”</a>.</p>
+			</div>
 	
-	<p style="color:black"> - The internship positions with me for 2024 have been filled. But I am always eager to connect with passionate individuals interested in future opportunities. Internship selections are typically made in late January and early February, but occasions may arise for mid-year openings. If you're interested in collaborating or exploring possibilities at any point in the future, I encourage you to email me directly. Your initiative and interest are highly valued, and I welcome your contact at any time.</p>
+			<div class="news-item">
+				<p class="news-date">December 6, 2024</p>
+				<p>Digital Salon was presented at Siggraph Asia Real-Time Live 2024.</p>
+			</div>
+	
+			<div class="news-item">
+				<p class="news-date">November, 2024</p>
+				<p>I will serve in the Siggraph Asia 2024 Technical Papers Committee.</p>
+			</div>
 
-	<p style="color:black"> - I presented Project Poseable at <a href="https://www.adobe.com/max.html">Adobe Max Sneaks 2023</a> . Watch the <a href="https://www.youtube.com/live/barsu1NWE4s?si=g9Yxspi-Ub2Q-1XG&t=2479.">live demo</a>. </p>
+			<div class="news-item">
+				<p class="news-date">June, 2024</p>
+				<p>I am co-organizing the CVPR 2024 workshop <a href="https://syntagen.github.io/.">SyntaGen - Harnessing Generative Models for Synthetic Visual Datasets</a></p>
+			</div>
 
-	<p style="color:black"> - I served in the Siggraph 2023 Technical Papers Committee. I will chair the session "Motion Recipes and Simulation" on Monday, 7 August 10:45am - 12:15pm PDT.</p>
+			<div class="news-item">
+				<p class="news-date"> 2024</p>
+				<p>The internship positions with me for 2024 have been filled. But I am always eager to connect with passionate individuals interested in future opportunities. Internship selections are typically made in late January and early February, but occasions may arise for mid-year openings. If you're interested in collaborating or exploring possibilities at any point in the future, I encourage you to email me directly. Your initiative and interest are highly valued, and I welcome your contact at any time.</p>
+			</div>
+
+			<div class="news-item">
+				<p class="news-date">2023</p>
+				<p>I presented Project Poseable at Adobe Max Sneaks 2023 . Watch the live demo.</p>
+			</div>
+			
+			<div class="news-item">
+				<p class="news-date">2023</p>
+				<p>I served in the Siggraph 2023 Technical Papers Committee. I will chair the session "Motion Recipes and Simulation" on Monday, 7 August 10:45am - 12:15pm PDT.</p>
+			</div>
+	
+			<!-- Add more news items as needed -->
+	
+		</div>
 
 </div>
 
@@ -112,15 +185,23 @@
 <div id="research" class="w-section section press" >
 
 	
-	<div class="project-contatiner w-container"><h1 class="main-heading">Research</h1>
-
+	<div class="project-contatiner w-container"><h1 class="main-heading">Research</h1></div>
 	
+	<div class="project-contatiner w-container">
+	<a href="./index.html#3DLearning" class="w-nav-link nav-link nav-link" style="max-width: 940px;">3D Learning</a>
+	<a href="./index.html#3DHair" class="w-nav-link nav-link" style="max-width: 940px;">Hair</a>
+	<a href="./index.html#3DMotion" class="w-nav-link nav-link" style="max-width: 940px;">Motion</a>
+	<a href="./index.html#HumanSpectrum" class="w-nav-link nav-link" style="max-width: 940px;">Human</a>
+	<a href="./index.html#AR" class="w-nav-link nav-link" style="max-width: 940px;">AR</a>
+	<a href="./index.html#Innovations" class="w-nav-link nav-link" style="max-width: 940px;">Innovations</a>
 	<hr class="myhr" ></hr>
 
+	</div>
 
 
 
-	<div class="project-contatiner w-container">
+
+	<div class="project-contatiner w-container" id="3DLearning" >
 		<h1 class="project-heading" >3D Learning</h1>
 		<p>This part of work is about designing the general architecture and understanding the mechanism of deep learning for 3D data. </p>
 		
@@ -204,12 +285,13 @@
 						<br><em>CVPR 2019</em> [<a href="https://arxiv.org/pdf/1812.07035.pdf">paper</a>]  [<a href="project_rotation/rotation.html">project page</a>] 
 				</div>
 		 	 </div>
-
-		  
-
+			  <hr class="myhr" ></hr>
 	</div>
 
-	<h1 class="project-heading" >3D Hair</h1>
+	
+
+	<div class="project-contatiner w-container" id="3DHair" >
+		<h1 class="project-heading" id="3DHair">3D Hair</h1>
 		<p>This part of work is about hair modeling and simulation. </p>
 		<br>
 		<b>Publications:</b>
@@ -292,8 +374,8 @@
 	
 	<hr class="myhr" ></hr>
 	
-	<div class="project-contatiner w-container">
-		<h1 class="project-heading" >Motion</h1>
+	<div class="project-contatiner w-container" id="3DMotion" >
+		<h1 class="project-heading" >3D Motion</h1>
 		<p>This part of work is about generating vivid motion for 3D Avatars. Here we investigate in topics on motion prior, motion editing, long-term inbetweening, motion style editing, hand-object interaction, human-scene interaction and secondary motion simulation. </p>
 
 		<br>
@@ -411,13 +493,15 @@
 					[<a href="https://youtu.be/zI1HOyruYcY">video</a>]</p> 
 			</div>
 		  </div>
+
+		  <hr class="myhr"></hr>
 	</div>
 
-	<hr class="myhr"></hr>
+	
 
 
-	<div class="project-contatiner w-container">
-		<h1 class="project-heading" >Human Capturing</h1>
+	<div class="project-contatiner w-container" id="HumanSpectrum">
+		<h1 class="project-heading" >Human Spectrum</h1>
 		<p>This part of work is about inferring 3D human face, hair, garment and pose from images and videos. This work can enable the end applications on novel human synthesis, e.g., swapping the face between two videos.
 		<br>
 		<br>
@@ -510,7 +594,7 @@
 	<hr class="myhr"></hr>
 
 
-	<div class="project-contatiner w-container">
+	<div class="project-contatiner w-container" id="AR">
 		<h1 class="project-heading" >Augmented Reality</h1>
 		<p>Inspired by the hologram system in manga "Psycho Pass" I design the Pmomo (projection mapping on movable object) system to create the phantasm of real-world objects being covered with virtual exteriors. As supporting 6-DOF object motion, the system can keep tracking the object and projecting 3D texture on its surface in real-time. Meanwhile, occlusions are culled from projection as to improve the sense of realism. In the picture left, the models held in the user' hands were originally white but now rendered with vivid textures by projection. </p>
 		
@@ -531,9 +615,9 @@
 	<hr class="myhr"></hr>
 	
 
-	<div class="project-contatiner w-container">
+	<div class="project-contatiner w-container" id="Innovations">
 		
-		<h1 class="project-heading" >Innovation Projects</h1>
+		<h1 class="project-heading"  >Innovations</h1>
 
 		<div class="w-row project-row"><div class="w-col w-col-5"><img src="./zhouyi_files/poseable.gif"></div>
 		<div class="w-col w-col-7">
@@ -569,7 +653,7 @@
 			<p><b>Performance-based 3D Cartoon Facial Animation Control</b></p><p>I developed this software to create a windows application that can make the avatars follow the facial and body actions of the users in real time. In the left picture, I am controlling 'Sponge Bob' to perform funny actions of nodding and laughing. My method is building several key facial expression models, and morphing them into a new expression according to the facial coefficients tracked by Kinect.</p></div></div></div>
 
 		
-		
+			<hr class="myhr"></hr>
 	</div>
 	
 	<div><br></div>
