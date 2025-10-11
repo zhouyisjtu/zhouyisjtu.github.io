@@ -117,7 +117,8 @@
 					</div>
 					
 					
-					<div><p style="color:white"><br><br><br><br>I am a research scientist at Adobe. I received my PhD from the University of Southern California under the supervision of <a href="https://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html">Dr. Hao Li</a> and my Master's and Bachelor's degrees from Shanghai Jiao Tong University under the supervision of Dr. Shuangjiu Xiao. My research focuses on autonomous 3D virtual human and 3D representation learning, specializing in 3D human modeling, reconstruction, motion synthesis and simulation. I develop 3D guided GenAI tools and build large scale 4D humanoid data for supporting GenAI foundation model training and downstream editing tasks. I served on the Siggraph 2023, Siggraph Asia 2024 and 2025 Technical Papers Committee and 2025 Eurographics Short Paper Committee. I am also an independent musician</p>
+					<div><p style="color:white"><br><br><br><br>I am a research scientist at Adobe. I received my PhD from the University of Southern California under the supervision of <a href="https://www.hao-li.com/Hao_Li/Hao_Li_-_about_me.html">Dr. Hao Li</a> and my Master's and Bachelor's degrees from Shanghai Jiao Tong University under the supervision of Dr. Shuangjiu Xiao. My research focuses on autonomous 3D virtual human and 3D representation learning, specializing in 3D human modeling, reconstruction, motion synthesis and simulation. I develop 3D guided GenAI tools and build large scale 4D humanoid data for supporting GenAI foundation model training and downstream editing tasks. I served on the Siggraph 2023, Siggraph Asia 2024 and 2025 Technical Papers Committee and 2025 Eurographics Short Paper Committee.</p> 
+					<p style="color:white">I am also an independent musician</p>
 					</div>
 
 			</div>
@@ -210,9 +211,9 @@
 	
 	<div class="project-contatiner w-container">
 	<a href="./index.html#3DLearning" class="w-nav-link nav-link nav-link" style="max-width: 940px;">3D Learning</a>
+	<a href="./index.html#HumanSpectrum" class="w-nav-link nav-link" style="max-width: 940px;">Human</a>
 	<a href="./index.html#3DMotion" class="w-nav-link nav-link" style="max-width: 940px;">Motion</a>
 	<a href="./index.html#3DHair" class="w-nav-link nav-link" style="max-width: 940px;">Hair</a>
-	<a href="./index.html#HumanSpectrum" class="w-nav-link nav-link" style="max-width: 940px;">Human</a>
 	<a href="./index.html#AR" class="w-nav-link nav-link" style="max-width: 940px;">AR</a>
 	<a href="./index.html#Innovations" class="w-nav-link nav-link" style="max-width: 940px;">Innovations</a>
 	<hr class="myhr" ></hr>
@@ -243,42 +244,10 @@
 
 			<p>&nbsp;</p> 
 
-			<div class="row">
-				<div class="column left" style="background-color:FFFF;">
-					<!-- <img src="https://huggingface.co/wlyu/FaceLift/resolve/main/images/teaser.png" width="40%" /> -->
-					<video autoplay muted playsinline loop src="https://huggingface.co/wlyu/FaceLift/resolve/main/videos/teaser.mp4" type="video/mp4"  height="110%"></video>
-						<!-- <video muted="" loop="" autoplay="" width = "100%" style="text-align: center">
-							
-						<source src="https://huggingface.co/wlyu/FaceLift/resolve/main/videos/teaser.mp4"  type="video/mp4">
-						</video>
-
-						<img src="https://huggingface.co/wlyu/FaceLift/resolve/main/images/teaser.png" style="text-align: bottom" width="30%"> -->
-						
-				</div>
-					
-				<div class="column right" style="background-color:ffff;">
-					<div class="row">
-						
-						<div class="column left" style="background-color:ffff;">
-							<p>&nbsp;</p> 
-							<p><b>FaceLift: Single Image to 3D Head with View Generation and GS-LRM</b>
-								<br>Weijie Lyu, <b>Yi Zhou</b>, Ming-Hsuan Yang, Zhixin Shu
-								<br><em>2025 ICCV</em> [<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.wlyu.me/FaceLift/static/pdf/FaceLift_arxiv_version.pdf">paper</a>] [<a href="https://www.wlyu.me/FaceLift/">project</a>][<a href="https://github.com/weijielyu/FaceLift">code</a>]		
-							</p>
-								
-						</div>
-
-						<div class="column right" style="background-color:FFFF;">
-							<video autoplay muted playsinline loop src="zhouyi_files/yiturntable.mp4" type="video/mp4"  height="110%"></video>
-						</div>
-
-					</div>
-					
-				</div>
-			</div>
+			
 
 
-				<p>&nbsp;</p> 
+			<p>&nbsp;</p> 
 
 			<div class="row">
 				<div class="column left" style="background-color:FFFF;">
@@ -360,6 +329,125 @@
 			  <hr class="myhr" ></hr>
 	</div>
 
+	<br>
+
+	<!-- <hr class="myhr" ></hr> -->
+
+	<div class="project-contatiner w-container" id="HumanSpectrum">
+		<h1 class="project-heading" >Human Spectrum</h1>
+		<p>This part of work is about inferring 3D human face, hair, garment and pose from images and videos. This work can enable the end applications on novel human synthesis, e.g., swapping the face between two videos.
+		<br>
+		<br>
+		<b>Publications:</b> 
+
+			<div class="row">
+
+				<div class="row">
+				<div class="column left" style="background-color:FFFF;">
+					<video autoplay muted playsinline loop src="zhouyi_files/mimix.mp4" type="video/mp4"  height="99%"></video>
+
+					<!-- <video autoplay muted playsinline loop src="zhouyi_files/mimix.mp4" type="video/mp4"  height="80%"></video> -->
+				</div>
+				<div class="column right" style="background-color:ffff;">
+					<p><b>Character Mixing for Video Generation</b>
+						<br>Tingting Liao, Chongjian Ge, Guangyi Liu, Hao Li, <b>Yi Zhou</b>
+						<br><em>2025</em> [<a href="https://arxiv.org/pdf/2510.05093">paper</a>] [<a href="https://tingtingliao.github.io/mimix">project</a>]		
+						<p>&nbsp;</p> 
+				</div>
+			</div>
+
+			<br>
+		  	
+			
+			<div class="row">
+
+				<div class="row">
+				<div class="column left" style="background-color:FFFF;">
+					<video autoplay muted playsinline loop src="zhouyi_files/video_motion_graphs.mp4" type="video/mp4"  height="85%"></video>
+
+					<video autoplay muted playsinline loop src="zhouyi_files/video_motion_graphs2.mp4" type="video/mp4"  height="85%"></video>
+				</div>
+				<div class="column right" style="background-color:ffff;">
+					<p><b>Video Motion Graphs</b>
+						<br>Haiyang Liu,  Zhan Xu,  Fa-Ting Hong,  Shin-Ping Huang,  <b>Yi Zhou</b>,  Yang Zhou 
+						<br><em>ICCV 2025 (Highlight Paper)</em> [<a href="https://arxiv.org/pdf/2503.20218">paper</a>] [<a href="https://h-liu1997.github.io/Video-Motion-Graphs/">project</a>]		
+						<p>&nbsp;</p> 
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="column left" style="background-color:FFFF;">
+					<!-- <img src="https://huggingface.co/wlyu/FaceLift/resolve/main/images/teaser.png" width="40%" /> -->
+					<video autoplay muted playsinline loop src="https://huggingface.co/wlyu/FaceLift/resolve/main/videos/teaser.mp4" type="video/mp4"  height="110%"></video>
+						<!-- <video muted="" loop="" autoplay="" width = "100%" style="text-align: center">
+							
+						<source src="https://huggingface.co/wlyu/FaceLift/resolve/main/videos/teaser.mp4"  type="video/mp4">
+						</video>
+
+						<img src="https://huggingface.co/wlyu/FaceLift/resolve/main/images/teaser.png" style="text-align: bottom" width="30%"> -->
+						
+				</div>
+					
+				<div class="column right" style="background-color:ffff;">
+					<div class="row">
+						
+						<div class="column left" style="background-color:ffff;">
+							<p>&nbsp;</p> 
+							<p><b>FaceLift: Single Image to 3D Head with View Generation and GS-LRM</b>
+								<br>Weijie Lyu, <b>Yi Zhou</b>, Ming-Hsuan Yang, Zhixin Shu
+								<br><em>2025 ICCV</em> [<a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.wlyu.me/FaceLift/static/pdf/FaceLift_arxiv_version.pdf">paper</a>] [<a href="https://www.wlyu.me/FaceLift/">project</a>][<a href="https://github.com/weijielyu/FaceLift">code</a>]		
+							</p>
+								
+						</div>
+
+						<div class="column right" style="background-color:FFFF;">
+							<video autoplay muted playsinline loop src="zhouyi_files/yiturntable.mp4" type="video/mp4"  height="110%"></video>
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+
+			<br>
+			<br>
+
+			
+
+
+			<div class="row">
+				<div class="column left" style="background-color:FFFF;">
+					<img src="./zhouyi_files/2023_yasamin.png" width="90%" />
+				</div>
+				<div class="column right" style="background-color:ffff;">
+					<p><b>Normal-guided Garment UV Prediction for Human Re-texturing</b>
+						<br>Yasamin Jafarian, Tuanfeng Y. Wang, Duygu Ceylan, Jimei Yang, Nathan Carr, <b>Yi Zhou</b>, Hyun Soo Park
+						<br><em>CVPR 2023 (Highlight Paper)</em> [<a href="https://arxiv.org/pdf/2303.06504.pdf">paper</a>] [<a href="https://www.yasamin.page/normal-guided-uv">project</a>]		
+						<p>&nbsp;</p> 
+				</div>
+			</div>
+			<br>
+
+			
+
+			
+			<div class="row">
+				<div class="column left" style="background-color:FFFF;">
+					<img src="./zhouyi_files/123faceICCV.png" width="90%"/>
+				</div>
+				<div class="column right" style="background-color:ffff;">
+					<p><b>Realistic Dynamic Facial Textures from A Single Image Using GANs</b>
+						<br>Kyle Olszewski, Zimo Li, Chao Yang, <b>Yi Zhou</b>, Ronald Yu, Zeng Huang, Sitao Xiang, Shunsuke Saito, Pushmeet Kohli, Hao Li
+						<br><em>ICCV 2017</em> [<a href="http://www.hao-li.com/publications/papers/iccv2017RDFTFSIUG.pdf">paper</a>] [<a href="https://youtu.be/R-kkq4xxVNw">video</a>] [<a href="http://www.hao-li.com/publications/additionalMaterials/iccv2017additionalMaterialsB.pdf">additional materials</a>]
+						<p>&nbsp;</p> 
+				</div>
+			</div>
+
+			<hr class="myhr" ></hr>
+	</div>
+
 	<div class="project-contatiner w-container" id="3DMotion" >
 		<h1 class="project-heading" >3D Motion</h1>
 		<p>This part of work is about generating vivid motion for 3D Avatars. Here we investigate in topics on motion prior, motion editing, long-term inbetweening, motion style editing, hand-object interaction, human-scene interaction, secondary motion simulation and garment-body collision handling. </p>
@@ -436,7 +524,7 @@
 			</div>
 		  </div>
 
-		  <br>
+		  
 
 		  <br>
 
@@ -488,6 +576,18 @@
 				</div>
 			</div>
 
+			<div class="row">
+				<div class="column left" style="background-color:FFFF;">
+					<img src="./zhouyi_files/visibility.jpg" width="90%" />
+				</div>
+				<div class="column right" style="background-color:ffff;">
+					<p><b>Learning Visibility for Robust Dense Human Body Estimation</b>
+						<br>Chun-Han Yao, Jimei Yang, Duygu Ceylay, <b>Yi Zhou</b>, Yang Zhou, Ming-Hsuan Yang
+						<br><em>ECCV 2022</em> [<a href="https://arxiv.org/pdf/2208.10652.pdf">paper</a>][<a href="https://github.com/chhankyao/visdb">code</a>]		
+						<p>&nbsp;</p> 
+					</div>
+			</div>
+
 		  
 
 		  <div class="row">
@@ -515,6 +615,8 @@
 			
 			</div>
 		  </div>
+
+		  
 
 		  <div class="row">
 			<div class="column left" style="background-color:FFFF;">
@@ -633,78 +735,8 @@
 	</div>
 	
 	
-
-
-	<div class="project-contatiner w-container" id="HumanSpectrum">
-		<h1 class="project-heading" >Human Spectrum</h1>
-		<p>This part of work is about inferring 3D human face, hair, garment and pose from images and videos. This work can enable the end applications on novel human synthesis, e.g., swapping the face between two videos.
-		<br>
-		<br>
-		<b>Publications:</b> 
-			
-			<div class="row">
-
-				<div class="row">
-				<div class="column left" style="background-color:FFFF;">
-					<video autoplay muted playsinline loop src="zhouyi_files/video_motion_graphs.mp4" type="video/mp4"  height="80%"></video>
-
-					<video autoplay muted playsinline loop src="zhouyi_files/video_motion_graphs2.mp4" type="video/mp4"  height="80%"></video>
-				</div>
-				<div class="column right" style="background-color:ffff;">
-					<p><b>Video Motion Graphs</b>
-						<br>Haiyang Liu,  Zhan Xu,  Fa-Ting Hong,  Shin-Ping Huang,  <b>Yi Zhou</b>,  Yang Zhou 
-						<br><em>ICCV 2025 (Highlight Paper)</em> [<a href="https://arxiv.org/pdf/2503.20218">paper</a>] [<a href="https://h-liu1997.github.io/Video-Motion-Graphs/">project</a>]		
-						<p>&nbsp;</p> 
-				</div>
-			</div>
-
-
-
-
-			<div class="row">
-				<div class="column left" style="background-color:FFFF;">
-					<img src="./zhouyi_files/2023_yasamin.png" width="90%" />
-				</div>
-				<div class="column right" style="background-color:ffff;">
-					<p><b>Normal-guided Garment UV Prediction for Human Re-texturing</b>
-						<br>Yasamin Jafarian, Tuanfeng Y. Wang, Duygu Ceylan, Jimei Yang, Nathan Carr, <b>Yi Zhou</b>, Hyun Soo Park
-						<br><em>CVPR 2023 (Highlight Paper)</em> [<a href="https://arxiv.org/pdf/2303.06504.pdf">paper</a>] [<a href="https://www.yasamin.page/normal-guided-uv">project</a>]		
-						<p>&nbsp;</p> 
-				</div>
-			</div>
-
-			
-
-			<div class="row">
-				<div class="column left" style="background-color:FFFF;">
-					<img src="./zhouyi_files/visibility.jpg" width="90%" />
-				</div>
-				<div class="column right" style="background-color:ffff;">
-					<p><b>Learning Visibility for Robust Dense Human Body Estimation</b>
-						<br>Chun-Han Yao, Jimei Yang, Duygu Ceylay, <b>Yi Zhou</b>, Yang Zhou, Ming-Hsuan Yang
-						<br><em>ECCV 2022</em> [<a href="https://arxiv.org/pdf/2208.10652.pdf">paper</a>][<a href="https://github.com/chhankyao/visdb">code</a>]		
-						<p>&nbsp;</p> 
-					</div>
-				</div>
-
-
-		  
-			<div class="row">
-				<div class="column left" style="background-color:FFFF;">
-					<img src="./zhouyi_files/123faceICCV.png" width="90%"/>
-				</div>
-				<div class="column right" style="background-color:ffff;">
-					<p><b>Realistic Dynamic Facial Textures from A Single Image Using GANs</b>
-						<br>Kyle Olszewski, Zimo Li, Chao Yang, <b>Yi Zhou</b>, Ronald Yu, Zeng Huang, Sitao Xiang, Shunsuke Saito, Pushmeet Kohli, Hao Li
-						<br><em>ICCV 2017</em> [<a href="http://www.hao-li.com/publications/papers/iccv2017RDFTFSIUG.pdf">paper</a>] [<a href="https://youtu.be/R-kkq4xxVNw">video</a>] [<a href="http://www.hao-li.com/publications/additionalMaterials/iccv2017additionalMaterialsB.pdf">additional materials</a>]
-						<p>&nbsp;</p> 
-				</div>
-			</div>
-		</div>
-
 	<div><br></div>
 
-	<hr class="myhr"></hr>
 
 
 	<div class="project-contatiner w-container" id="AR">
@@ -720,12 +752,15 @@
 		<br><em>CHI 2016</em> [<a href="https://dl.acm.org/citation.cfm?id=2858329">paper</a>]</p>
 		<br>
 		<img src="./zhouyi_files/pmomo.jpg" />
-			
+		
+		
 		
 	</div>
-	
-	
+	<br>
+	<br>
+	<br>
 	<hr class="myhr"></hr>
+	
 	
 
 	<div class="project-contatiner w-container" id="Innovations">
@@ -734,9 +769,11 @@
 
 		<div class="w-row project-row"><div class="w-col w-col-5"><img src="./zhouyi_files/poseable.gif"></div>
 		<div class="w-col w-col-7">
-		<p><b>Project Poseable</b></p> represents a breakthrough in AI-based image generation models, making it easy for the image generator to seamlessly interact with large 3D objects, including poses from photos of real people. The prototype is integrated with Project Poseable which can create a 3D rendering from text input, take depth and perspective into consideration, and re-align the object. While creating 3D scenes with traditional skeletal systems is technically complex and time-consuming, Project Poseable offers an effortless alternative that makes it possible for anyone to expand their creative horizons. Watch the <a href="https://youtu.be/y9G3dAeoKDQ?si=6sIb7iocqb5AljJR">live demo</a> at Adobe Max Sneaks 2023.
-		</p></div>
-		</div></div>
+		<p><b>Project Poseable</b></p> represents a breakthrough in AI-based image generation models, making it easy for the image generator to seamlessly interact with large 3D objects, including poses from photos of real people. The prototype is integrated with Project Poseable which can create a 3D rendering from text input, take depth and perspective into consideration, and re-align the object. While creating 3D scenes with traditional skeletal systems is technically complex and time-consuming, Project Poseable offers an effortless alternative that makes it possible for anyone to expand their creative horizons. Watch the <a href="https://youtu.be/y9G3dAeoKDQ?si=6sIb7iocqb5AljJR">live demo</a> at <b>Adobe Max Sneaks 2023</b>.
+	
+	
+	</p></div>
+	</div></div>
 
 
 
